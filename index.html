@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documentation Page </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <header>Data Structure </header>
+            <ul class="ull">
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Algorithm">Algorithm</a></li>
+                <li><a class="nav-link" href="#Asymptotic_Analysis">Asymptotic Analysis</a></li>
+                <li><a class="nav-link" href="#Pointer">Pointer</a></li>
+                <li><a class="nav-link" href="#Structure">Structure</a></li>
+                <li><a class="nav-link" href="#Array">Array</a></li>
+                <li><a class="nav-link" href="#Linked_List">Linked List</a></li>
+                <li><a class="nav-link" href="#Stack">Stack</a></li>
+                <li><a class="nav-link" href="#Queue">Queue</a></li>
+                <li><a class="nav-link" href="#Tree">Tree</a></li>
+                <li><a class="nav-link" href="#Searching">Searching</a></li>
+                <li><a class="nav-link" href="#Sorting">Sorting</a></li>
+                <li><a class="nav-link" href="#Heap">Heap</a></li>
+                <li><a class="nav-link" href="#Hashing">Hashing</a></li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <div class="container">
+                <!-- section 1 -->
+                <section class="main-section" id="Introduction">
+                    <header>Introduction</header>
+                    <article>
+                        <p>Data Structures are the programmatic way of storing
+                            data so that data can be used efficiently.
+                            Almost every enterprise application uses various
+                            types of data structures in one or the other way.
+                            This tutorial will give you a great understanding
+                            on Data Structures needed to understand the
+                            complexity of enterprise level applications
+                            and need of algorithms, and data structures.
+                        </p>
+                        <h4>Applications of Data Structure and Algorithms</h4>
+                        <p>Algorithm is a step-by-step procedure, which defines
+                            a set of instructions to be executed in a certain
+                            order to get the desired output. Algorithms are
+                            generally created independent of underlying
+                            languages, i.e. an algorithm can be implemented
+                            in more than one programming language.From the
+                            data structure point of view, following are
+                            some important categories of algorithms −
+                        </p>
+                        <ul>
+                            <li><b>Search-</b>Algorithm to search an item in a data structure.</li>
+                            <li><b>Sort-</b>Algorithm to sort items in a certain order.</li>
+                            <li><b>Insert-</b>Algorithm to insert item in a data structure.</li>
+                            <li><b>Update-</b>Algorithm to update an existing item in a data structure.</li>
+                            <li><b>Delete-</b>Algorithm to delete an existing item from a data structure.</li>
+                        </ul>
+                        <p>The following computer problems can be solved using Data Structures −</p>
+                        <ul>
+                            <li>Fibonacci number series</li>
+                            <li>Knapsack problem</li>
+                            <li>Tower of Hanoi</li>
+                            <li>All pair shortest path by Floyd-Warshall</li>
+                            <li>Shortest path by Dijkstra</li>
+                            <li>Project scheduling</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="main-section" id="Algorithm">
+                    <header>Algorithm</header>
+                    <article>
+                        <p>The word Algorithm means “a process or set of rules
+                            to be followed in calculations or other
+                            problem-solving operations”. Therefore
+                            Algorithm refers to a set of rules/instructions
+                            that step-by-step define how a work is to be
+                            executed upon in order to get the expected
+                            results.
+                        </p>
+                        <p>The Algorithm designed are language-independent,
+                            i.e. they are just plain instructions that
+                            can be implemented in any language, and yet
+                            the output will be the same, as expected.
+                        </p>
+                        <h4>Characteristics of an Algorithm</h4>
+                        <p>Not all procedures can be called an algorithm.
+                            An algorithm should have the following
+                            characteristics −
+                        </p>
+                        <ul>
+                            <li>Unambiguous</li>
+                            <li>Input</li>
+                            <li>Output</li>
+                            <li>Finiteness</li>
+                            <li>Feasibility</li>
+                            <li>Independent</li>
+                        </ul>
+                        <h4>How to Design an Algorithm?</h4>
+                        <p>Inorder to write an algorithm, following things are
+                            needed as a pre-requisite:
+                        </p>
+                        <ul>
+                            <li>The <b>problem</b> that is to be solved by this algorithm.</li>
+                            <li>The <b>constraints</b> of the problem that must be considered while solving the problem.
+                            </li>
+                            <li>The <b>input</b> to be taken to solve the problem.</li>
+                            <li>The <b>output</b> to be expected when the problem the is solved.</li>
+                            <li>The <b>solution</b> to this problem, in the given constraints.</li>
+                        </ul>
+                        <h4>What is Algorithm Complexity and How to find it?</h4>
+                        <p>An algorithm is defined as complex based on
+                            the amount of Space and Time it consumes.
+                            Hence the Complexity of an algorithm refers
+                            to the measure of the Time that it will need
+                            to execute and get the expected output, and
+                            the Space it will need to store all the data
+                            (input, temporary data and output). Hence
+                            these two factors define the efficiency of
+                            an algorithm.
+                        </p>
+                        <p>The two factors of Algorithm Complexity are:</p>
+                        <ul>
+                            <li><b>Time Factor:</b>Time is measured by counting the number of key operations such as
+                                comparisons in the sorting algorithm.</li>
+                            <li><b>Space Factor:</b> Space is measured by counting the maximum memory space required by
+                                the
+                                algorithm.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- section 3 -->
+
+                <section class="main-section" id="Asymptotic_Analysis">
+                    <header>Asymptotic Analysis</header>
+                    <article>
+                        <p>Asymptotic analysis of an algorithm refers
+                            to defining the mathematical boundation/framing
+                            of its run-time performance. Using asymptotic
+                            analysis, we can very well conclude the best
+                            case, average case, and worst case scenario of
+                            an algorithm.
+                        </p>
+                        <p>Asymptotic analysis is input bound i.e.,
+                            if there's no input to the algorithm,
+                            it is concluded to work in a constant
+                            time. Other than the "input" all other
+                            factors are considered constant.
+                        </p>
+                        <p>Usually, the time required by an algorithm falls under three types −</p>
+                        <ul>
+                            <li><b>Best Case-</b>Minimum time required for program execution.</li>
+                            <li><b>Average Case-</b> Average time required for program execution.</li>
+                            <li><b>Worst Case-</b>Maximum time required for program execution.</li>
+                        </ul>
+                        <h4>Asymptotic Notations</h4>
+                        <p>Following are the commonly used asymptotic
+                            notations to calculate the running time
+                            complexity of an algorithm.
+                        </p>
+                        <ul>
+                            <li>Ο Notation</li>
+                            <li>Ω Notation</li>
+                            <li>θ Notation</li>
+                        </ul>
+                        <h5>Big Oh Notation, Ο</h5>
+                        <p>The notation Ο(n) is the formal way to express
+                            the upper bound of an algorithm's running
+                            time. It measures the worst case time
+                            complexity or the longest amount of
+                            time an algorithm can possibly take to
+                            complete.
+                        </p>
+                        <h5>For example, for a function<b>f(n)</b></h5>
+                        <code>Ο(f(n)) = { g(n) : there exists c > 0 and n0 such that f(n) ≤ c.g(n) for all n > n0. }</code>
+
+                        <h5>Omega Notation, Ω</h5>
+                        <p>The notation Ω(n) is the formal way to express the lower
+                            bound of an algorithm's running time.
+                            It measures the best case time complexity
+                            or the best amount of time an algorithm
+                            can possibly take to complete.
+                        </p>
+                        <h5>For example, for a function<b>f(n)</b></h5>
+                        <code>Ω(f(n)) ≥ { g(n) : there exists c > 0 and n0 such that g(n) ≤ c.f(n) for all n > n0. }</code>
+
+                        <h5>Theta Notation, θ</h5>
+                        <p>The notation θ(n) is the formal way to express both the lower bound
+                            and the upper bound of an algorithm's running
+                            time.
+                        </p>
+                        <h5>For example, for a function<b>f(n)</b></h5>
+                        <code>θ(f(n)) = { g(n) if and only if g(n) =  Ο(f(n)) and g(n) = Ω(f(n)) for all n > n0. }</code>
+
+
+                        <h4>Common Asymptotic Notations</h4>
+                        <p>Following is a list of some common asymptotic notations −</p>
+                        <table>
+                            <tr>
+                                <th>NOTATION</th>
+                                <th>COMPLEXITY</th>
+                            </tr>
+                            <tr>
+                                <td>constant</td>
+                                <td>Ο(1)</td>
+                            </tr>
+                            <tr>
+                                <td>logarithmic</td>
+                                <td>Ο(log n)</td>
+                            </tr>
+                            <tr>
+                                <td>linear</td>
+                                <td>Ο(n)</td>
+                            </tr>
+                            <tr>
+                                <td>quadratic</td>
+                                <td>Ο(n<sup>2</sup>)</td>
+                            </tr>
+                            <tr>
+                                <td>cubic</td>
+                                <td>Ο(n<sup>3</sup>)</td>
+                            </tr>
+                            <tr>
+                                <td>polynomial</td>
+                                <td>n<sup>Ο(1)</sup></td>
+                            </tr>
+                            <tr>
+                                <td>exponential</td>
+                                <td>2<sup>Ο(n)</sup></td>
+                            </tr>
+                        </table>
+                    </article>
+                </section>
+
+                <!-- section 4 -->
+                <section class="main-section" id="Pointer">
+                    <header>Pointer</header>
+                    <article>
+                        <p>Pointers are symbolic representation of
+                            addresses. They enable programs to
+                            simulate call-by-reference as well
+                            as to create and manipulate dynamic
+                            data structures. It’s general
+                            declaration in C/C++ has the format:
+                        </p>
+                        <h4>Syntax:</h4>
+                        <code>data_type * pointer_variable_name;</code>
+
+                        <h4>initialize a pointer</h4>
+                        <code> pointer = &variable; </code>
+
+                        <h4>How to use a pointer?</h4>
+                        <ul>
+                            <li>Define a pointer variable</li>
+                            <li>Assigning the address of a variable to a pointer using unary operator (&) which returns
+                                the
+                                address of that variable.</li>
+                            <li>Accessing the value stored in the address using unary operator (*) which returns the
+                                value
+                                of the variable located at the address specified by its operand.</li>
+
+                        </ul>
+                        <p>The reason we associate data type to a pointer is that it knows how many bytes the data is
+                            stored
+                            in. When we increment a pointer, we increase the pointer by the size of
+                            data type to which it points.
+                        </p>
+                        <h4>References and Pointers</h4>
+                        <p>There are 3 ways to pass C++ arguments to a function:</p>
+                        <ul>
+                            <li>call-by-value</li>
+                            <li>call-by-reference with pointer argument</li>
+                            <li>call-by-reference with reference argument</li>
+                        </ul>
+
+                        <h4>Types of a pointer</h4>
+                        <h5>Null Pointer</h5>
+                        <p>We can create a null pointer by assigning null value during the pointer declaration. This
+                            method
+                            is useful when you do not have any address assigned to the pointer. A null pointer always
+                            contains value 0.</p>
+
+                        <h5>Void Pointer</h5>
+                        <p>A void pointer is also called as a generic pointer. It does not have any standard data type.
+                            A
+                            void pointer is created by using the keyword void. It can be used to store an address of any
+                            variable.</p>
+
+                        <h5>Wild Pointer</h5>
+                        <p>A pointer is said to be a wild pointer if it is not being initialized to anything. These
+                            types of
+                            pointers are not efficient because they may point to some unknown memory location which may
+                            cause problems in our program and it may lead to crashing of the program. One should always
+                            be
+                            careful while working with wild pointers.</p>
+                    </article>
+                </section>
+
+                <!-- section 5 -->
+                <section class="main-section" id="Structure">
+                    <header>Structure</header>
+                    <article>
+                        <p>A structure is a user defined data type in C/C++. A structure
+                            creates a data type that can be used to group items of possibly
+                            different types into a single type.
+                        </p>
+                        <h4>How to create a structure?</h4>
+                        <p>‘struct’ keyword is used to create a structure. Following is an example.</p>
+                        <code>struct address 
+                    { 
+                       char name[50]; 
+                       char street[100]; 
+                       char city[50]; 
+                       char state[20]; 
+                       int pin; 
+                    };
+                </code>
+                        <h5>What is an array of structures?</h5>
+                        <p>Like other primitive data types, we can create an array of structures.</p>
+
+                        <h5>What is a structure pointer?</h5>
+                        <p>Like primitive types, we can have pointer to a structure. If we have a pointer to structure,
+                            members are accessed using arrow ( -> ) operator.</p>
+
+                        <h5>Limitation of structres</h5>
+                        <ul>
+                            <li><b>No Data Hiding:</b>C Structures do not permit data hiding. Structure members can be
+                                accessed by any function, anywhere in the scope of the Structure.</li>
+                            <li><b>Function inside structure:</b>C structures do not permit functions inside Structure
+                            </li>
+                            <li><b>Static Members:</b>C Structures cannot have static members inside their body</li>
+                            <li><b>Access Modifies:</b>C Programming language do not support access modifiers. So they
+                                cannot be used in C Structures.</li>
+                            <li><b>Construction creation in Structure</b>Structures in C cannot have constructor inside
+                                Structures.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- section 6-->
+                <section class="main-section" id="Array">
+                    <header>Array</header>
+                    <article>
+                        <p>An array is a collection of items stored at contiguous memory locations. The idea is to store
+                            multiple items of the same type together. This makes it easier to calculate the position of
+                            each
+                            element by simply adding an offset to a base value, i.e., the memory location of the first
+                            element of the array (generally denoted by the name of the array).
+
+                        </p>
+                        <h4>Types of indexing in array:</h4>
+                        <ul>
+                            <li>0 (zero-based indexing): The first element of the array is indexed by subscript of 0
+                            </li>
+                            <li>1 (one-based indexing): The first element of the array is indexed by subscript of 1</li>
+                            <li>n (n-based indexing): The base index of an array can be freely chosen. Usually
+                                programming
+                                languages allowing n-based indexing also allow negative index values and other scalar
+                                data
+                                types like enumerations, or characters may be used as an array index.</li>
+                        </ul>
+
+                        <h4>Basic Operation</h4>
+                        <p>Following are the basic operations supported by an array.</p>
+                        <ul>
+                            <li><b>Traverse-</b>print all the array elements one by one.</li>
+                            <li><b>Insertion</b>Adds an element at the given index.</li>
+                            <li><b>Deletion</b>Deletes an element at the given index.</li>
+                            <li><b>Search</b>Searches an element using the given index or by the value.</li>
+                            <li><b>Update</b>Updates an element at the given index.</li>
+                        </ul>
+
+                        <h4>Advantages of using arrays:</h4>
+                        <ul>
+                            <li>Arrays allow random access of elements. This makes accessing elements by position
+                                faster.
+                            </li>
+                            <li>Arrays have better cache locality that can make a pretty big difference in performance.
+                            </li>
+                        </ul>
+
+                        <h5>Examples-</h5>
+                        <p>// A character array in C/C++/Java<br><code>char arr1[] = {'g', 'e', 'e', 'k', 's'};</code>
+                        </p>
+                        <p>// An Integer array in C/C++/Java<br><code>int arr2[] = {10, 20, 30, 40, 50};</code></p>
+                    </article>
+                </section>
+
+                <!-- section 7 -->
+                <section class="main-section" id="Linked_List">
+                    <header>Linked List</header>
+                    <article>
+                        <p>Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are
+                            not
+                            stored at a contiguous location;
+                            the elements are linked using pointers
+                        </p>
+                        <h4>Why Linked List?</h4>
+                        <p>Arrays can be used to store linear data of similar types,
+                            but arrays have the following limitations.
+                        </p>
+                        <ul>
+                            <li> The size of the arrays is fixed: So we must know the upper limit on the number of
+                                elements
+                                in advance. Also, generally, the allocated memory is equal to the upper limit
+                                irrespective
+                                of the usage.</li>
+                            <li>Inserting a new element in an array of elements is expensive because the room has to be
+                                created for the new elements and to create room existing elements have to be shifted.
+                            </li>
+
+                        </ul>
+
+                        <h5>Types Of Linked List</h5>
+                        <ul>
+                            <li><b>Simple Linked List-</b>Item navigation is forward only.</li>
+                            <li><b>Doubly Linked List-</b>Items can be navigated forward and backward.</li>
+                            <li><b>Circular Linked List</b>Last item contains link of the first element as next and the
+                                first element has a link to the last element as previous.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!--  section 8-->
+                <section class="main-section" id="Stack">
+                    <header>Stack</header>
+                    <article>
+                        <p>Stack is a linear data structure which follows a
+                            particular order in which the operations
+                            are performed. The order may be
+                            LIFO(Last In First Out) or FILO(First
+                            In Last Out).
+                        </p>
+                        <p>There are many real-life examples of a stack.
+                            Consider an example of plates stacked over
+                            one another in the canteen. The plate which
+                            is at the top is the first one to be removed,
+                            i.e. the plate which has been placed at the
+                            bottommost position remains in the stack for
+                            the longest period of time. So, it can be
+                            simply seen to follow LIFO(Last In
+                            First Out)/FILO(First In Last Out) order.
+                        </p>
+                        <h4>Basic Operation</h4>
+                        <ul>
+                            <li>push()</li>
+                            <li>pop()</li>
+                        </ul>
+                        <h5>Push Operation</h5>
+                        <p>The process of putting a new data element onto stack is known as a Push Operation.
+
+                        </p>
+
+                        <h5>Example-</h5>
+                        <code>void push(int data) {<br>
+                    if(!isFull()) {<br>
+                       top = top + 1;   <br>
+                       stack[top] = data;<br>
+                    } else {<br>
+                       printf("Could not insert data, Stack is full.\n");<br>
+                    }<br>
+                 }
+                </code>
+
+                        <h5>Pop Operation</h5>
+                        <p>Accessing the content while removing it from the stack, is known as a Pop Operation. In an
+                            array
+                            implementation of pop() operation, the data element is not actually removed, instead top is
+                            decremented to a lower position in the stack to point to the next value. But in linked-list
+                            implementation, pop() actually removes data element and deallocates memory space.</p>
+                        <h5>Example-</h5>
+                        <code>int pop(int data) {<br>
+
+                    if(!isempty()) {<br>
+                       data = stack[top];<br>
+                       top = top - 1;   <br>
+                       return data;<br>
+                    } else {<br>
+                       printf("Could not retrieve data, Stack is empty.\n");<br>
+                    }<br>
+                 }<br>
+                </code>
+                    </article>
+                </section>
+
+                <!-- section 9 -->
+
+                <section class="main-section" id="Queue">
+                    <header>Queue</header>
+                    <article>
+                        <p>Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is
+                            open
+                            at both its ends. One end is always used to insert data (enqueue) and the other is used to
+                            remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item
+                            stored
+                            first will be accessed first.</p>
+                        <p>As in stacks, a queue can also be implemented using Arrays, Linked-lists, Pointers and
+                            Structures. For the sake of simplicity, we shall implement queues using one-dimensional
+                            array.
+                        </p>
+                        <h4>Basic Operations</h4>
+                        <p>Queue operations may involve initializing or defining the queue, utilizing it, and then
+                            completely erasing it from the memory. Here we shall try to understand the basic operations
+                            associated with queues −
+
+                        </p>
+                        <ul>
+                            <li>enqueue()</li>
+                            <li>dequeue()</li>
+                            <li>peek()</li>
+                            <li>isfull()</li>
+                            <li>isempty()</li>
+                        </ul>
+                        <h5>Alogirthm of Peek</h5>
+                        <code>begin procedure peek<br>
+                          return queue[front]<br>
+                          end procedure
+                </code>
+                    </article>
+                </section>
+
+                <!-- section 10 -->
+                <section class="main-section" id="Tree">
+                    <header>Tree</header>
+                    <article>
+                        <h4>Binary Tree Data Structure</h4>
+                        <p>A tree whose elements have at most 2 children is called a binary tree. Since each element in
+                            a
+                            binary tree can have only 2 children, we typically name them the left and right child.</p>
+                        <p>A Binary Tree node contains following parts.</p>
+                        <ul>
+                            <li>Data</li>
+                            <li>Pointer to left child</li>
+                            <li>Pointer to right child</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- section 11 -->
+
+                <section class="main-section" id="Searching">
+                    <header>Searching</header>
+                    <article>
+                        <p>Searching Algorithms are designed to check for an element or retrieve an element from any
+                            data
+                            structure where it is stored. Based on the type of search operation, these algorithms are
+                            generally classified into two categories:</p>
+                        <ul>
+                            <li><b>Sequential Search-</b>In this, the list or array is traversed sequentially and every
+                                element is checked. For example: Linear Search.</li>
+                            <li><b>Interval Search-</b> These algorithms are specifically designed for searching in
+                                sorted
+                                data-structures. These type of searching algorithms are much more efficient than Linear
+                                Search as they repeatedly target the center of the search structure and divide the
+                                search
+                                space in half. For Example: Binary Search.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- section 12 -->
+
+                <section class="main-section" id="Sorting">
+                    <header>Sorting</header>
+                    <article>
+                        <p>Sorting Algorithm is used to rearrange a given array or list elements according to a
+                            comparison
+                            operator on the elements. The comparison operator is used to decide the new order of element
+                            in
+                            the respective data structure.</p>
+                        <code>
+                    <ul>
+                        <li>Selection Sort</li>
+                        <li>Bubble Sort</li>
+                        <li>Insertion Sort</li>
+                        <li>Merge Sort</li>
+                        <li>Quick Sort</li>
+                        <li>Heap Sort</li>
+                        <li>Radix Sort</li>
+                    </ul>
+                </code>
+                    </article>
+                </section>
+
+                <!-- section 13 -->
+                <section class="main-section" id="Heap">
+                    <header>Heap</header>
+                    <article>
+                        <p>A Heap is a special Tree-based data structure in which the tree is a complete binary tree.
+                            Generally, Heaps can be of two types:</p>
+                        <ul>
+                            <li><b>Min-Heap:</b>In a Min-Heap the key present at the root node must be minimum among the
+                                keys present at all of it’s children. The same property must be recursively true for all
+                                sub-trees in that Binary Tree.</li>
+                            <li><b>Max-Heap:</b>In a Max-Heap the key present at the root node must be greatest among
+                                the
+                                keys present at all of it’s children. The same property must be recursively true for all
+                                sub-trees in that Binary Tree.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- section 14 -->
+
+                <section class="main-section" id="Hashing">
+                    <header>Hashing</header>
+                    <article>
+                        <p>A hashing algorithm is a cryptographic hash function. It is a mathematical algorithm that
+                            maps
+                            data of arbitrary size to a hash of a fixed size. ... It should avoid hash collisions, each
+                            message has its own hash; Every change to a message, even the smallest one, should change
+                            the
+                            hash value.</p>
+                    </article>
+                </section>
+
+                <!-- section 15 -->
+                <section class="main-section" id="Reference">
+                    <header>Reference</header>
+                    <article>
+                        <ul>
+                            <li>For the more details, hit on this link
+                                <a href="https://www.tutorialspoint.com/data_structures_algorithms/index.htm"
+                                    target="_blank">Click Here</a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
